@@ -69,6 +69,7 @@ class SingleLinkedList {
         }
 
         [[nodiscard]] reference operator*() const noexcept {
+            assert(node_ != nullptr);
             return node_->value;
         }
 
